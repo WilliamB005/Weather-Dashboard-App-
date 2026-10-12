@@ -26,7 +26,7 @@ async function fetchWeather(city) {
   weatherCard.classList.add("hidden");
 
   try {
-    //  using Open-Meteo Geocoding API (No key needed)
+    //  using Open-Meteo Geocoding API 
     const geoUrl = `https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=1`;
     const geoResponse = await fetch(geoUrl);
 
